@@ -10,7 +10,7 @@
   "author": "Shoe <andrewelee1983@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Harubex/scryfall.git"
+    "url": "git+https://github.com/Shoe2/scryfall-ts.git"
   },
   "license": "MIT",
   "main": "./build/scryfall.js",
@@ -20,9 +20,9 @@
     "mocha": "^3.5.0"
   },
   "bugs": {
-    "url": "https://github.com/Harubex/scryfall/issues"
+    "url": "https://github.com/Shoe2/scryfall-ts/issues"
   },
-  "homepage": "https://github.com/Harubex/scryfall#readme",
+  "homepage": "https://github.com/Shoe2/scryfall-ts#readme",
   "directories": {
     "test": "test"
   },
