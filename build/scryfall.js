@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Scryfall = exports.randomCard = exports.fromSet = exports.allSets = exports.cardVersions = exports.getCard = exports.getAllCards = exports.getRulings = exports.getCardByName = exports.autocomplete = void 0;
 const https = require("https");
 const qs = require("querystring");
 const url = require("url");
@@ -126,7 +127,7 @@ function getCard(first, second, cb) {
         let err = new Error();
         switch (secondType) {
             case "undefined":
-            case "function":
+            case "function": // This will be a scryfall id lookup.
                 if (firstType !== "string") {
                     err.message = "The given Scryfall id is invalid";
                 }
@@ -137,7 +138,7 @@ function getCard(first, second, cb) {
                     }
                 }
                 break;
-            case "string":
+            case "string": // This will be a lookup by a multiverse or mtgo id.
                 if (second !== "mtgo" && second !== "multiverse") {
                     err.message = "Unable to determine the type of id being used";
                 }
@@ -145,7 +146,7 @@ function getCard(first, second, cb) {
                     url += `${second}/${first}`;
                 }
                 break;
-            case "number":
+            case "number": // This will be a lookup by a set/collector pair.
                 if (firstType !== "string") {
                     err.message = "Unable to determine set code/collector number being used.";
                 }

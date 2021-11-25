@@ -1,4 +1,5 @@
 import { ScryfallCardFace } from "./ScryfallCardFace";
+import { ScryfallRelatedItem } from "./ScryfallRelatedItem";
 import { ScryfallLayout } from "./ScryfallLayout";
 import { ScryfallImages } from "./ScryfallImages";
 import { ScryfallColor } from "./ScryfallColor";
@@ -32,6 +33,10 @@ export interface ScryfallCard {
      * This card’s foil Magic Online ID (also known as the Catalog ID), if any. A large percentage of cards are not available on Magic Online and do not have this ID.
      */
     mtgo_foil_id?: number;
+    /**
+     * This card’s Arena ID, if any. A large percentage of cards are not available on Arena and do not have this ID.
+     */
+    arena_id?: number;
     /**
      * A link to this card object on Scryfall’s API.
      */
@@ -123,7 +128,7 @@ export interface ScryfallCard {
     /**
      * An array of cards related to this card, if any.
      */
-    all_parts?: ScryfallCardFace[];
+    all_parts?: ScryfallRelatedItem[];
     /**
      * An array of Card Face objects, if this card is multifaced.
      */
@@ -136,13 +141,13 @@ export interface ScryfallCard {
         future: Legality;
         frontier: Legality;
         modern: Legality;
-        pauper: Legality;
         legacy: Legality;
-        penny: Legality;
+        pauper: Legality;
         vintage: Legality;
-        duel: Legality;
+        penny: Legality;
         commander: Legality;
         "1v1": Legality;
+        duel: Legality;
         brawl: Legality;
     };
     /**

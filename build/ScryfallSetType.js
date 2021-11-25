@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.ScryfallSetType = void 0;
 /**
  * An exhaustive list of set types; Scryfall provides an overall categorization for each Set in the set_type property.
  */
@@ -8,78 +9,82 @@ var ScryfallSetType;
     /**
      * A yearly Magic core set (e.g. Tenth Edition).
      */
-    ScryfallSetType[ScryfallSetType["core"] = "core"] = "core";
+    ScryfallSetType["core"] = "core";
     /**
      * A rotational expansion set in a block (e.g. Zendikar).
      */
-    ScryfallSetType[ScryfallSetType["expansion"] = "expansion"] = "expansion";
+    ScryfallSetType["expansion"] = "expansion";
     /**
      * A reprint set that contains no new cards (e.g. Modern Masters).
      */
-    ScryfallSetType[ScryfallSetType["masters"] = "masters"] = "masters";
+    ScryfallSetType["masters"] = "masters";
     /**
      * Masterpiece Series premium foil cards.
      */
-    ScryfallSetType[ScryfallSetType["masterpiece"] = "masterpiece"] = "masterpiece";
+    ScryfallSetType["masterpiece"] = "masterpiece";
     /**
      * From the Vault gift sets.
      */
-    ScryfallSetType[ScryfallSetType["from_the_vault"] = "from_the_vault"] = "from_the_vault";
+    ScryfallSetType["from_the_vault"] = "from_the_vault";
     /**
      * Signature Spellbook series gift sets.
      */
-    ScryfallSetType[ScryfallSetType["spellbook"] = "spellbook"] = "spellbook";
+    ScryfallSetType["spellbook"] = "spellbook";
     /**
      * Premium Deck Series decks.
      */
-    ScryfallSetType[ScryfallSetType["premium_deck"] = "premium_deck"] = "premium_deck";
+    ScryfallSetType["premium_deck"] = "premium_deck";
     /**
      * Duel Decks.
      */
-    ScryfallSetType[ScryfallSetType["duel_deck"] = "duel_deck"] = "duel_deck";
+    ScryfallSetType["duel_deck"] = "duel_deck";
     /**
      * Commander preconstructed decks.
      */
-    ScryfallSetType[ScryfallSetType["commander"] = "commander"] = "commander";
+    ScryfallSetType["commander"] = "commander";
     /**
      * Planechase sets.
      */
-    ScryfallSetType[ScryfallSetType["planechase"] = "planechase"] = "planechase";
+    ScryfallSetType["planechase"] = "planechase";
     /**
      * Conspiracy sets.
      */
-    ScryfallSetType[ScryfallSetType["conspiracy"] = "conspiracy"] = "conspiracy";
+    ScryfallSetType["conspiracy"] = "conspiracy";
     /**
      * Archenemy sets.
      */
-    ScryfallSetType[ScryfallSetType["archenemy"] = "archenemy"] = "archenemy";
+    ScryfallSetType["archenemy"] = "archenemy";
     /**
      * Vanguard card sets.
      */
-    ScryfallSetType[ScryfallSetType["vanguard"] = "vanguard"] = "vanguard";
+    ScryfallSetType["vanguard"] = "vanguard";
     /**
      * A funny un-set or set with funny promos (e.g. Unglued, Happy Holidays).
      */
-    ScryfallSetType[ScryfallSetType["funny"] = "funny"] = "funny";
+    ScryfallSetType["funny"] = "funny";
     /**
      * A starter/introductory set (e.g. Portal).
      */
-    ScryfallSetType[ScryfallSetType["starter"] = "starter"] = "starter";
+    ScryfallSetType["starter"] = "starter";
     /**
      * A gift box set.
      */
-    ScryfallSetType[ScryfallSetType["box"] = "box"] = "box";
+    ScryfallSetType["box"] = "box";
     /**
      * A set that contains purely promotional cards.
      */
-    ScryfallSetType[ScryfallSetType["promo"] = "promo"] = "promo";
+    ScryfallSetType["promo"] = "promo";
     /**
      * A set made up of tokens and emblems.
      */
-    ScryfallSetType[ScryfallSetType["token"] = "token"] = "token";
+    ScryfallSetType["token"] = "token";
     /**
      * A set made up of gold-bordered, oversize, or trophy cards that are not legal.
      */
-    ScryfallSetType[ScryfallSetType["memorabilia"] = "memorabilia"] = "memorabilia";
+    ScryfallSetType["memorabilia"] = "memorabilia";
+    /**
+     * A set that expands upon typical rules for draft, like Conspiracy and Battlebond.
+     */
+    ScryfallSetType["draft_innovation"] = "draft_innovation";
 })(ScryfallSetType = exports.ScryfallSetType || (exports.ScryfallSetType = {}));
 //# sourceMappingURL=ScryfallSetType.js.map

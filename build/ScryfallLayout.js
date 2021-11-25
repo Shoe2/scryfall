@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.ScryfallLayout = void 0;
 /**
  * The arrangement of card parts, faces, and other bounded regions on cards.
  */
@@ -8,62 +9,62 @@ var ScryfallLayout;
     /**
      * A standard Magic card with one face.
      */
-    ScryfallLayout[ScryfallLayout["normal"] = "normal"] = "normal";
+    ScryfallLayout["normal"] = "normal";
     /**
      * A split-faced card.
      */
-    ScryfallLayout[ScryfallLayout["split"] = "split"] = "split";
+    ScryfallLayout["split"] = "split";
     /**
      * Cards that invert vertically with the flip keyword.
      */
-    ScryfallLayout[ScryfallLayout["flip"] = "flip"] = "flip";
+    ScryfallLayout["flip"] = "flip";
     /**
      * Double-sided cards that transform.
      */
-    ScryfallLayout[ScryfallLayout["transform"] = "transform"] = "transform";
+    ScryfallLayout["transform"] = "transform";
     /**
      * Cards with meld parts printed on the back.
      */
-    ScryfallLayout[ScryfallLayout["meld"] = "meld"] = "meld";
+    ScryfallLayout["meld"] = "meld";
     /**
      * Cards with Level Up.
      */
-    ScryfallLayout[ScryfallLayout["leveler"] = "leveler"] = "leveler";
+    ScryfallLayout["leveler"] = "leveler";
     /**
      * Saga-type cards.
      */
-    ScryfallLayout[ScryfallLayout["saga"] = "saga"] = "saga";
+    ScryfallLayout["saga"] = "saga";
     /**
      * Plane and Phenomenon-type cards.
      */
-    ScryfallLayout[ScryfallLayout["planar"] = "planar"] = "planar";
+    ScryfallLayout["planar"] = "planar";
     /**
      * Scheme-type cards.
      */
-    ScryfallLayout[ScryfallLayout["scheme"] = "scheme"] = "scheme";
+    ScryfallLayout["scheme"] = "scheme";
     /**
      * Vanguard-type cards.
      */
-    ScryfallLayout[ScryfallLayout["vanguard"] = "vanguard"] = "vanguard";
+    ScryfallLayout["vanguard"] = "vanguard";
     /**
      * Token cards.
      */
-    ScryfallLayout[ScryfallLayout["token"] = "token"] = "token";
+    ScryfallLayout["token"] = "token";
     /**
      * Tokens with another token printed on the back.
      */
-    ScryfallLayout[ScryfallLayout["double_faced_token"] = "double_faced_token"] = "double_faced_token";
+    ScryfallLayout["double_faced_token"] = "double_faced_token";
     /**
      * Emblem cards.
      */
-    ScryfallLayout[ScryfallLayout["emblem"] = "emblem"] = "emblem";
+    ScryfallLayout["emblem"] = "emblem";
     /**
      * Cards with Augment.
      */
-    ScryfallLayout[ScryfallLayout["augment"] = "augment"] = "augment";
+    ScryfallLayout["augment"] = "augment";
     /**
      * Host-type cards.
      */
-    ScryfallLayout[ScryfallLayout["host"] = "host"] = "host";
+    ScryfallLayout["host"] = "host";
 })(ScryfallLayout = exports.ScryfallLayout || (exports.ScryfallLayout = {}));
 //# sourceMappingURL=ScryfallLayout.js.map

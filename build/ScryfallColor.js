@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.ScryfallColor = void 0;
 /**
  * A text representation of the available Magic colors.
  */
@@ -8,22 +9,22 @@ var ScryfallColor;
     /**
      * White.
      */
-    ScryfallColor[ScryfallColor["W"] = "W"] = "W";
+    ScryfallColor["W"] = "W";
     /**
      * Blue.
      */
-    ScryfallColor[ScryfallColor["U"] = "U"] = "U";
+    ScryfallColor["U"] = "U";
     /**
      * Black.
      */
-    ScryfallColor[ScryfallColor["B"] = "B"] = "B";
+    ScryfallColor["B"] = "B";
     /**
      * Red.
      */
-    ScryfallColor[ScryfallColor["R"] = "R"] = "R";
+    ScryfallColor["R"] = "R";
     /**
      * Green.
      */
-    ScryfallColor[ScryfallColor["G"] = "G"] = "G";
+    ScryfallColor["G"] = "G";
 })(ScryfallColor = exports.ScryfallColor || (exports.ScryfallColor = {}));
 //# sourceMappingURL=ScryfallColor.js.map
