@@ -1,4 +1,5 @@
 import { ScryfallCardFace } from "./ScryfallCardFace";
+import { ScryfallRelatedItem } from "./ScryfallRelatedItem";
 import { ScryfallLayout } from "./ScryfallLayout";
 import { ScryfallImages } from "./ScryfallImages";
 import { ScryfallColor } from "./ScryfallColor";
@@ -135,7 +136,7 @@ export interface ScryfallCard {
     /**
      * An array of cards related to this card, if any.
      */
-    all_parts?: ScryfallCardFace[];
+    all_parts?: ScryfallRelatedItem[];
     /**
      * An array of Card Face objects, if this card is multifaced.
      */
