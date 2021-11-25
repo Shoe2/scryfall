@@ -1,26 +1,32 @@
 {
-    "name": "scryfall",
-    "description": "A simple wrapper around Scryfall's public API.",
-    "version": "0.9.7",
-    "keywords": [
-        "scryfall",
-        "magic",
-        "mtg"
-    ],
-    "author": {
-        "name": "ryan",
-        "email": "ryan@harubex.com",
-        "url": "https://harubex.com"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/Harubex/scryfall.git"
-    },
-    "license": "MIT",
-    "main": "./build/scryfall.js",
-    "types": "./build/scryfall.d.ts",
-    "devDependencies": {
-        "@types/node": "^8.0.19",
-        "mocha": "^3.5.0"
-    }
+  "name": "scryfall-ts",
+  "description": "Scryfall TS wrapper by ryan@harubex.com and Shoe",
+  "version": "1.0.0",
+  "keywords": [
+    "scryfall",
+    "magic",
+    "mtg"
+  ],
+  "author": "Shoe <andrewelee1983@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Harubex/scryfall.git"
+  },
+  "license": "MIT",
+  "main": "./build/scryfall.js",
+  "types": "./build/scryfall.d.ts",
+  "devDependencies": {
+    "@types/node": "^8.0.19",
+    "mocha": "^3.5.0"
+  },
+  "bugs": {
+    "url": "https://github.com/Harubex/scryfall/issues"
+  },
+  "homepage": "https://github.com/Harubex/scryfall#readme",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "test"
+  }
 }
