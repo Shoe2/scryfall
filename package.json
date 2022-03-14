@@ -1,7 +1,7 @@
 {
   "name": "scryfall-ts",
   "description": "Scryfall TS wrapper by ryan@harubex.com and Shoe",
-  "version": "1.4.1",
+  "version": "1.5.0",
   "keywords": [
     "scryfall",
     "magic",
