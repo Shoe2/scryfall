@@ -5,17 +5,32 @@ import { ScryfallImages } from "./ScryfallImages";
 import { ScryfallColor } from "./ScryfallColor";
 import { ScryfallUUID } from "./ScryfallUUID";
 import { ScryfallURI } from "./ScryfallURI";
+import { ScryfallPrices } from "./ScryfallPrices";
 /**
  * Card objects represent individual Magic cards that players can obtain and add to their collection (with a few minor exceptions).
  */
 export interface ScryfallCard {
-    /**
-     * Object field - should equal "card".
-     */
+    arena_id?: number;
+    artist_ids: string[];
+    booster: true;
+    card_back_id?: string;
+    cardmarket_id: number;
+    finishes: string[];
+    frame_effects: string[];
+    games: string[];
+    image_status: string;
+    keywords: string[];
+    multiverse_ids: number[];
+    prices: ScryfallPrices;
+    promo: false;
+    released_at: Date;
+    set_id: string;
+    set_type: string;
+    story_spotlight: boolean;
+    tcgplayer_id: number;
+    textless: boolean;
+    variation: boolean;
     object: "card";
-    /**
-     * A unique ID for this card in Scryfall’s database.
-     */
     id: ScryfallUUID;
     /**
      * A unique ID for this card’s oracle identity. This value is consistent across reprinted card editions, and unique among different cards with the same name (e.g. tokens, Unstable variants).
@@ -36,7 +51,6 @@ export interface ScryfallCard {
     /**
      * This card’s Arena ID, if any. A large percentage of cards are not available on Arena and do not have this ID.
      */
-    arena_id?: number;
     /**
      * A link to this card object on Scryfall’s API.
      */
